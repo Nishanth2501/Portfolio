@@ -180,6 +180,14 @@ function App() {
                 </div>
               </div>
               <div className="skill-category">
+                <h3>Databases & SQL</h3>
+                <div className="skill-tags">
+                  {profileData.skills.databases.map((skill, index) => (
+                    <span key={index} className="skill-tag">{skill}</span>
+                  ))}
+                </div>
+              </div>
+              <div className="skill-category">
                 <h3>Visualization & BI</h3>
                 <div className="skill-tags">
                   {profileData.skills.visualization.map((skill, index) => (

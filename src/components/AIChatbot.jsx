@@ -36,7 +36,13 @@ const AIChatbot = () => {
       • Cloud & Databases: ${profileData.skills.cloud_databases.join(', ')}
       • Tools: ${profileData.skills.tools.join(', ')}
       
-      He's particularly strong in Python, SQL, FastAPI, LangChain, and Azure technologies.`;
+      He's particularly strong in Python, SQL, FastAPI, LangChain, and Azure technologies.
+      
+      **SQL Expertise:**
+      • Database design and query optimization
+      • MySQL, PostgreSQL, SQL Server
+      • Data modeling and ETL processes
+      • Automated SQL pipelines with 25% efficiency improvement`;
     }
     
     if (lowerQuestion.includes('project') || lowerQuestion.includes('work')) {
@@ -103,18 +109,40 @@ const AIChatbot = () => {
       He's always open to discussing new opportunities!`;
     }
     
+    if (lowerQuestion.includes('sql') || lowerQuestion.includes('database')) {
+      return `Nishanth has extensive SQL and database expertise:
+      
+      **SQL Skills:**
+      • Advanced SQL query writing and optimization
+      • Database design and data modeling
+      • ETL processes and data pipelines
+      • Performance tuning and query optimization
+      
+      **Database Technologies:**
+      • MySQL, PostgreSQL, SQL Server
+      • Azure SQL Database
+      • Vector databases for AI applications
+      
+      **Real-world Impact:**
+      • Automated Python and SQL pipelines using Azure Data Factory
+      • 25% efficiency improvement in data processing
+      • Built predictive models with SQL data integration
+      • Developed REST APIs with SQL backend integration`;
+    }
+    
     if (lowerQuestion.includes('hello') || lowerQuestion.includes('hi')) {
       return `Hello! Welcome to Nishanth Reddy's world! 🚀 I'm here to tell you all about his skills, projects, and experience. What would you like to know?`;
     }
     
     // Default response
     return `I can help you learn about Nishanth's:
-    • Technical skills and technologies
+    • Technical skills (Python, SQL, AI/ML, Azure)
     • Projects and work experience
     • Education and certifications
+    • SQL and database expertise
     • Contact information
     
-    Please ask me something specific about his background!`;
+    Try asking: "Tell me about his SQL skills" or "What projects has he worked on?"`;
   };
 
   const handleSendMessage = async () => {

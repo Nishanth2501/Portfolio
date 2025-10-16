@@ -56,7 +56,7 @@ export const profileData = {
 
   skills: {
     programming: [
-      "Python", "SQL"
+      "Python", "SQL", "JavaScript"
     ],
     frameworks: [
       "FastAPI", "Streamlit", "LangChain", "Scikit-learn", "Pandas", "NumPy"
@@ -66,6 +66,9 @@ export const profileData = {
     ],
     data_engineering: [
       "ETL", "Azure Data Factory", "Data Pipelines", "API Integration", "Docker", "Azure ML"
+    ],
+    databases: [
+      "SQL", "MySQL", "PostgreSQL", "SQL Server", "Database Design", "Query Optimization", "Data Modeling"
     ],
     visualization: [
       "Power BI", "Tableau", "Matplotlib", "Plotly"
