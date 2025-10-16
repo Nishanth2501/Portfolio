@@ -4,7 +4,7 @@ export const profileData = {
     name: "Nishanth Reddy Palugula",
     title: "Data Science Intern at NeuralApps.ai",
     location: "Dallas, Texas, United States",
-    email: "nishanthreddy2501@gmail.com",
+    email: "palugulanishanthreddy@gmail.com",
     github: "https://github.com/Nishanth2501",
     linkedin: "https://www.linkedin.com/in/nishanth-reddy-palugula-a06739328",
     portfolio: "https://nishanthreddy-portfolio.vercel.app",
