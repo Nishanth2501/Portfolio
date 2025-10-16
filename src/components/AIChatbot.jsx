@@ -182,20 +182,20 @@ const AIChatbot = () => {
       {/* Chat Button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+        className="fixed bottom-4 right-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
       >
-        <Bot size={24} />
+        <Bot size={20} />
       </button>
 
       {/* Chat Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-md h-96 flex flex-col">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl w-full max-w-sm h-80 flex flex-col">
             {/* Header */}
-            <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+            <div className="flex items-center justify-between p-3 border-b border-gray-200 dark:border-gray-700">
               <div className="flex items-center space-x-2">
-                <Bot className="text-purple-600" size={20} />
-                <h3 className="font-semibold text-gray-900 dark:text-white">Nishanth's AI Assistant</h3>
+                <Bot className="text-purple-600" size={18} />
+                <h3 className="font-semibold text-gray-900 dark:text-white text-sm">AI Assistant</h3>
               </div>
               <button
                 onClick={() => setIsOpen(false)}
@@ -206,7 +206,7 @@ const AIChatbot = () => {
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4">
+            <div className="flex-1 overflow-y-auto p-3 space-y-3">
               {messages.map((message, index) => (
                 <div
                   key={index}
@@ -242,7 +242,7 @@ const AIChatbot = () => {
             </div>
 
             {/* Input */}
-            <div className="p-4 border-t border-gray-200 dark:border-gray-700">
+            <div className="p-3 border-t border-gray-200 dark:border-gray-700">
               <div className="flex space-x-2">
                 <input
                   type="text"
