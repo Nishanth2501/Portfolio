@@ -3,6 +3,7 @@ import React from 'react';
 // Navbar
 const links = [
   { label: "About", href: "#about" },
+  { label: "Education", href: "#education" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
@@ -58,6 +59,103 @@ function About() {
         I'm Nishanth Reddy Palugula, a passionate and results-driven Data Scientist & AI Engineer with a proven track record of developing and deploying production AI and analytics systems using Python, SQL, FastAPI, and Azure.<br/><br/>
         My expertise: LLMs, RAG, enterprise MLOps, NLP, healthcare analytics, explainable AI, and cloud deployments. 
         I thrive on building robust data pipelines, finding business impact, and coding for transparency & scalability. Ready to drive the next transformation at your organization!
+      </div>
+    </section>
+  );
+}
+
+// Education
+const education = [
+  {
+    degree: "Master of Business Administration (MBA)",
+    specialization: "Business Analytics",
+    university: "Midwestern State University",
+    location: "Wichita Falls, Texas",
+    duration: "Jan 2024 - Dec 2025",
+    status: "In Progress",
+    description: "Pursuing a STEM-designated MBA in Business Analytics with a rigorous focus on data-driven strategy, predictive modeling, and business intelligence. The curriculum blends core business management with advanced analytics techniques, including data visualization, machine learning, and quantitative modeling.",
+    activities: [
+      "Midwestern Indian Student Association (MISA)",
+      "Make A Difference (MAD) Community",
+      "Business Analytics & Data Science Projects",
+      "Case Competitions"
+    ],
+    coursework: "Cost analysis and control, applied business statistics, data modeling & forecasting, business process optimization, and machine learning applications in business. Hands-on experience in Tableau, Power BI, Python, SQL, R, and SAS.",
+    skills: ["Tableau", "Data Visualization", "Data Modeling", "Python", "SQL", "RapidMiner", "Finance", "Statistics", "Predictive Analytics", "R", "SAS"]
+  },
+  {
+    degree: "Bachelor of Technology (B.Tech)",
+    specialization: "Electronics and Communication Engineering",
+    university: "ICFAI Business School",
+    location: "Hyderabad, India",
+    duration: "Aug 2019 - Jun 2023",
+    status: "Completed",
+    description: "Built a strong foundation in circuit design, signal processing, data analysis, and machine learning. Actively participated in coding competitions, hackathons, and tech clubs, collaborating with peers to design and prototype innovative solutions.",
+    activities: [
+      "Entrepreneurship Cell",
+      "Coding Competitions (HackerRank, CodeChef)",
+      "Local Tech Clubs",
+      "Hackathons"
+    ],
+    coursework: "Industrial visits to ISRO, Indian Institute of Science (IISc), and KHMD, gaining valuable exposure to real-world R&D practices and applications of technology.",
+    skills: ["Data Analysis", "Business Intelligence", "Circuit Design", "Python", "Machine Learning"]
+  }
+];
+
+function EducationCard({ education }) {
+  return (
+    <div className="education-card">
+      <div className="education-header">
+        <div className="education-degree-section">
+          <h3 className="education-degree">{education.degree}</h3>
+          <div className="education-specialization">{education.specialization}</div>
+          <div className="education-university">{education.university}</div>
+          <div className="education-details">
+            <span className="education-duration">{education.duration}</span>
+            <span className="education-status">{education.status}</span>
+          </div>
+          <div className="education-location">{education.location}</div>
+        </div>
+      </div>
+      
+      <div className="education-description">
+        {education.description}
+      </div>
+      
+      <div className="education-activities">
+        <h4>Activities & Societies:</h4>
+        <ul>
+          {education.activities.map((activity, index) => (
+            <li key={index}>{activity}</li>
+          ))}
+        </ul>
+      </div>
+      
+      <div className="education-coursework">
+        <h4>Key Coursework & Experience:</h4>
+        <p>{education.coursework}</p>
+      </div>
+      
+      <div className="education-skills">
+        <h4>Skills:</h4>
+        <div className="skills-tags">
+          {education.skills.map((skill, index) => (
+            <span key={index} className="skill-tag">{skill}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Education() {
+  return (
+    <section id="education" className="section">
+      <h2 className="section-title">Education</h2>
+      <div className="education-timeline">
+        {education.map((edu, index) => (
+          <EducationCard key={index} education={edu} />
+        ))}
       </div>
     </section>
   );
@@ -380,6 +478,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Education />
       <Experience />
       <Projects />
       <Skills />
