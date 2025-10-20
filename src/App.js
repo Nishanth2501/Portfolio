@@ -44,7 +44,6 @@ function Hero() {
         <a className="cta-btn primary" href="https://data-science-resume-word-edited.tiiny.site">Download Resume</a>
         <a className="cta-btn secondary" href="https://linkedin.com/in/nishanth-reddy-palugula-a06739328">LinkedIn</a>
         <a className="cta-btn secondary" href="https://github.com/Nishanth2501">GitHub</a>
-        <a className="cta-btn secondary" href="https://nishanthreddy-portfolio.vercel.app/">Portfolio Demo</a>
       </div>
     </section>
   );
