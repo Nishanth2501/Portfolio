@@ -3,11 +3,11 @@ import React from 'react';
 // Navbar
 const links = [
   { label: "About", href: "#about" },
-  { label: "Education", href: "#education" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Certifications", href: "#certifications" },
+  { label: "Education", href: "#education" },
   { label: "Resume/CV", href: "#resume" },
   { label: "Contact", href: "#contact" }
 ];

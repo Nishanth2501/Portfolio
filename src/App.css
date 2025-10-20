@@ -52,6 +52,7 @@ body::before {
   font-size: 1.2em;
   font-weight: 700;
   color: #ffffff;
+  margin-right: 20px;
 }
 
 .logo-icon {
@@ -135,12 +136,12 @@ body::before {
 }
 
 .cta-btn {
-  display: inline-block;
+    display: inline-block;
   padding: 16px 32px;
   border-radius: 12px;
-  font-weight: 600;
-  font-size: 1em;
-  text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
   transition: all 0.3s ease;
   border: 2px solid transparent;
   position: relative;
@@ -839,3 +840,4 @@ body::before {
     gap: 20px;
   }
 }
+  
