@@ -478,11 +478,11 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Education />
       <Experience />
       <Projects />
       <Skills />
       <Certifications />
+      <Education />
       <Resume />
       <Contact />
       <Footer />
